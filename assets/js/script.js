@@ -1,7 +1,7 @@
 const btn = document.querySelector('#pesquisa-btn');
 const searchBar = document.querySelector('#pesquisa');
 const apikey = "d5b600bc";
-const baseURL = `http://www.omdbapi.com/?apikey=${apikey}&`;
+const baseURL = `https://www.omdbapi.com/?apikey=${apikey}&`;
 const logo = document.querySelector('.logo');
 const btnVolta = document.querySelector('.left');
 const btnAvanca = document.querySelector('.right');
@@ -37,7 +37,7 @@ function chamaAPI(){
 
     const busca = searchBar.value;
 
-    fetch(`http://www.omdbapi.com/?s=${busca}&apikey=${apikey}&page=${contaPaginas}`)
+    fetch(`https://www.omdbapi.com/?s=${busca}&apikey=${apikey}&page=${contaPaginas}`)
     .then(resultado => resultado.json())
     .then(json => criaFilme(json))
 }
