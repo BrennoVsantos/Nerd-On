@@ -3,10 +3,10 @@
  
  link: https://brennovsantos.github.io/Nerd-On/
  
- Site responsivo
+ Site responsivo.
  
  Pesquise filmes, series, desenhos, jogos e animes.
  
- veja sinopses, generos, datas de lançamento e premios recebidos ao clickar na imagem
+ veja sinopses, generos, datas de lançamento e premios recebidos ao apertat na imagem.
  
- pesquisa e resultado em INGÊS
+ pesquisa e resultado em INGLÊS.
