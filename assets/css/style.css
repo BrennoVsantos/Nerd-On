@@ -126,6 +126,7 @@ header ul{
     border: 1px solid aliceblue;
     transition: .5s ease;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 .movie-card img{
@@ -188,6 +189,10 @@ header ul{
     display: none;
 }
 
+.fa-sharp, .fa-solid ,.fa-bars{
+    font-size: 1.2rem;
+}
+
 .logoOff h1{
     text-align: center;
     cursor: pointer;
@@ -225,16 +230,109 @@ header ul{
     color: aliceblue;
 }
 
+.id{
+    display:  none;
+}
 
+.modal-container{
+    background-color: rgba(68, 67, 67, 0.699);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-modal{
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    border: 3px solid beige;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.info-modal button{
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(156, 101, 101);
+    border-radius: 15px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.modal-text{
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-text p{
+    margin-top: 10px;
+}
+
+.modal-titulo{
+    font-size: 1.5rem;
+    color: rgb(236, 122, 69);
+}
+
+.genero{
+    background-color: rgb(97, 97, 97);
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.ano{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.desc{
+    font-size: 1.3rem;
+    font-style: italic  ;
+}
+
+#close-modal{
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(156, 101, 101);
+    border-radius: 15px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#close-modal:hover{
+    background-color: rgb(190, 78, 78);
+}
+
+.off{
+    display: none;
+}
+
+.on{
+    display: flex;
+}
+
+footer{
+    text-align: center;
+    font-size: .5rem;
+    padding: 10px;
+    padding-bottom: 10px;
+    color: rgb(71, 71, 71);
+    height: 30px;
+}
 
 
 @media (max-width: 1280px){
     .nav{
         display: none;
-    }
-
-    .hg{
-        display: block;
     }
 
     .logoOff h1{
@@ -246,23 +344,33 @@ header ul{
     }
 
     #pesquisa{
-        width: 70vw;
+        width: 85vw;
+    }
+    .lnks{
+        display: flex;
     }
 
 }
 
 @media (max-width: 800px){
-    .hg{
-        display: none;
-    }
 
-    .lnks{
-        display: flex;
+    #pesquisa{
+        width: 70vw;
     }
 
     header{
         padding: 0px 35px;
     }
 
-}
+    .info-modal{
+        flex-direction: column;
+    }
 
+    .info-modal img{
+        height: 100px;
+        width: 80px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+}
