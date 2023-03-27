@@ -3,4 +3,3 @@
  
  link: https://brennovsantos.github.io/Nerd-On/
  
- OBS: só funciona baixando.
